@@ -23,12 +23,77 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="js-menu-container">
+      <button type="button" class="menu-toggle js-close-menu btn-close-modal">
+        <svg width="8" height="8">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+
+      <nav class="menu-drawer-navigation">
+        <ul class="mobile-navigation">
+          <li>
+            <a href="index.html" id="current">Studio</a>
+          </li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-contact-info">
+        <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
+        <a href="tel:+110001111111"> +11 (000) 111-11-11</a>
+      </div>
+
+      <div class="social-media-mobile">
+        <ul class="social-icons-mobile">
+          <li class="social-media-mobile">
+            <a href="https://www.instagram.com/" class="social-media-link">
+              <svg class="social-svg-icon-mob" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-mobile">
+            <a href="https://twitter.com" class="social-media-link">
+              <svg class="social-svg-icon-mob" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-mobile">
+            <a href="https://www.facebook.com/" class="social-media-link">
+              <svg class="social-svg-icon-mob" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-mobile">
+            <a href="https://gb.linkedin.com/" class="social-media-link">
+              <svg class="social-svg-icon-mob" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <header class="global-header">
       <div class="header-container container">
         <nav class="nav-container">
           <a class="logo" href="./index.html"
             >Web<span class="black-logo">Studio</span></a
           >
+
+          <div class="menu-button js-open-menu">
+            <button type="button" class="open-menu-mobile">
+              <svg class="hamburger-menu" width="16.8" height="14.4">
+              <use href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+            </button>
+            
+          </div>
           <ul class="main-navigation">
             <li class="main-navigation-items">
               <a class="navigation-item active" href="./index.html">Studio</a>
@@ -130,8 +195,11 @@
           <h2 class="second-title">Our Team</h2>
           <ul class="members-list">
             <li class="team-members">
-              <img 
-              srcset="./images/mark-guerrero-image.jpg 1x, ./images/mark-guerrero-image2x.jpg 2x" 
+              <img
+                srcset="
+                  ./images/mark-guerrero-image.jpg   1x,
+                  ./images/mark-guerrero-image2x.jpg 2x
+                "
                 src="./images/mark-guerrero-image.jpg"
                 alt="Our Product Designer Mark Guerrero"
                 width="264"
@@ -186,8 +254,11 @@
             </li>
 
             <li class="team-members">
-              <img 
-              srcset="./images/tom-ford-image 1x, ./images/tom-ford-image2x.jpg 2x"
+              <img
+                srcset="
+                  ./images/tom-ford-image       1x,
+                  ./images/tom-ford-image2x.jpg 2x
+                "
                 src="./images/tom-ford-image.jpg"
                 alt="Our Frontend Developer Tom Ford"
                 width="264"
@@ -242,7 +313,10 @@
 
             <li class="team-members">
               <img
-              srcset="./images/camila-garcia-image.jpg 1x, ./images/camila-garcia-image2x.jpg 2x"
+                srcset="
+                  ./images/camila-garcia-image.jpg   1x,
+                  ./images/camila-garcia-image2x.jpg 2x
+                "
                 src="./images/camila-garcia-image.jpg"
                 alt="Our Marketing member Camila Garcia"
                 width="264"
@@ -297,8 +371,11 @@
             </li>
 
             <li class="team-members">
-              <img 
-              srcset="./images/daniel-wilson-image.jpg 1x, ./images/daniel-wilson-image2x.jpg 2x"
+              <img
+                srcset="
+                  ./images/daniel-wilson-image.jpg   1x,
+                  ./images/daniel-wilson-image2x.jpg 2x
+                "
                 src="./images/daniel-wilson-image.jpg"
                 alt="Our UI Designer Daniel Wilson"
                 width="264"
@@ -361,8 +438,11 @@
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="box">
-                <img 
-                srcset="./images/banking-app.jpg 1x, ./images/banking-app2x.jpg 2x"
+                <img
+                  srcset="
+                    ./images/banking-app.jpg   1x,
+                    ./images/banking-app2x.jpg 2x
+                  "
                   src="./images/banking-app.jpg"
                   alt="Banking App Image"
                   width="360"
@@ -382,8 +462,11 @@
 
             <li class="portfolio-list-item">
               <div class="box">
-                <img 
-                srcset="./images/cashless-pay.jpg 1x, ./images/cashless-pay2x.jpg 2x"
+                <img
+                  srcset="
+                    ./images/cashless-pay.jpg   1x,
+                    ./images/cashless-pay2x.jpg 2x
+                  "
                   src="./images/cashless-pay.jpg"
                   alt="Cashless Payment Image"
                   width="360"
@@ -403,8 +486,11 @@
 
             <li class="portfolio-list-item">
               <div class="box">
-                <img 
-                srcset="./images/meditation-app.jpg 1x, ./images/meditation-app2x.jpg 2x"
+                <img
+                  srcset="
+                    ./images/meditation-app.jpg   1x,
+                    ./images/meditation-app2x.jpg 2x
+                  "
                   src="./images/meditation-app.jpg"
                   alt="Meditation App Image"
                   width="360"
@@ -425,8 +511,11 @@
 
             <li class="portfolio-list-item">
               <div class="box">
-                <img 
-                srcset="./images/taxi-service.jpg 1x, ./images/taxi-service2x.jpg 2x"
+                <img
+                  srcset="
+                    ./images/taxi-service.jpg   1x,
+                    ./images/taxi-service2x.jpg 2x
+                  "
                   src="./images/taxi-service.jpg"
                   alt="Taxi Service Image"
                   width="360"
@@ -446,8 +535,11 @@
 
             <li class="portfolio-list-item">
               <div class="box">
-                <img 
-                srcset="./images/screen-ilustrations.jpg 1x, ./images/screen-ilustrations2x.jpg 2x"
+                <img
+                  srcset="
+                    ./images/screen-ilustrations.jpg   1x,
+                    ./images/screen-ilustrations2x.jpg 2x
+                  "
                   src="./images/screen-ilustrations.jpg"
                   alt="Screen Ilustration Image"
                   width="360"
@@ -467,8 +559,11 @@
 
             <li class="portfolio-list-item">
               <div class="box">
-                <img 
-                srcset="./images/online-courses.jpg 1x, ./images/online-courses2x.jpg 2x"
+                <img
+                  srcset="
+                    ./images/online-courses.jpg   1x,
+                    ./images/online-courses2x.jpg 2x
+                  "
                   src="./images/online-courses.jpg"
                   alt="Online Course Image"
                   width="360"
@@ -644,15 +739,17 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-                I accept the terms and conditions of the
+              I accept the terms and conditions of the
               <a class="privacy-link" href="">Privacy Policy</a>
             </label>
           </div>
-            <button type="submit" class="button-modal">Send</button>
+          <button type="submit" class="button-modal">Send</button>
         </form>
       </div>
     </div>
 
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+    <script src="./js/mobile.menu.js"></script>
   </body>
 </html>
